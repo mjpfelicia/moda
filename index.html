@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <body>
+        <main>
+            <img id="logo" src="./images/logo.svg" alt="logo">
+            <img id="foto" src="./images/hero-mobile.jpg" alt="mobile">
+            <section>
+                <div class="conteudo">
+
+                    <img id="logoDesktop" src="./images/logo.svg" alt="logo">
+                    <h1 id="coming">
+                        WE'RE
+                        <strong><span style="display: block;">COMING </span> SOON</strong>
+                    </h1>
+
+                    <p class="texto">
+                        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+                    </p>
+
+                    <form id="formEmail" action="#form">
+                        <input class="input_email" type="email" name="email" id="email" placeholder="Email Address">
+
+                        <button type="submit" class="email" onclick="validaForm()">
+                            <img id="inputError" src="./images/icon-error.svg" alt="error">
+                            <img src="./images/icon-arrow.svg" alt="submit">
+                        </button>
+                    </form>
+                    <span id="emalErrorMsg">Please provide a email valid</span>
+                </div>
+            </section>
+
+        </main>
+
+        <script src="./script.js"></script>
+    </body>
+
+</html>

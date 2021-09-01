@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+body,
+p,
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    font-family: "Josefin Sans";
+}
+
+ :root {
+    /*  Primária*/
+    --cor-desaturated-red: hsl(0, 36%, 70%);
+    --vermelho-suave: hsl(0, 93%, 68%);
+    /*Neutra*/
+    --cor-vermelho-acinzentado-escuro: hsl(0, 6%, 24%);
+    /*Gradient*/
+    --cor-linear-de: hsl(0, 0%, 100%);
+    --cor-para: hsl(0, 100%, 98%);
+    --cor-linear-de: hsl(0, 80%, 86%);
+    --cor-para: hsl(0, 74%, 74%);
+    --padding-content: 1.5em;
+}
+
+main {
+    background-color: hsl(0, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+#foto {
+    max-width: 100%;
+    max-height: 100vh;
+    padding-bottom: 50px;
+}
+
+#logo {
+    width: 7em;
+    padding: 30px;
+}
+
+#logoDesktop {
+    display: none;
+}
+
+#coming {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 10px;
+    color: var(--cor-desaturated-red);
+}
+
+section {
+    max-width: 100%;
+    padding: 15px;
+}
+
+section h1,
+section p {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+strong {
+    font-weight: 600;
+    color: var(--cor-vermelho-acinzentado-escuro);
+}
+
+p {
+    color: var(--cor-desaturated-red);
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+form {
+    border: 1px solid var(--cor-desaturated-red);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+input,
+input:hover {
+    border: none;
+    border-radius: 30px;
+    padding-left: var(--padding-content);
+    background-color: hsl(0, 100%, 98%);
+}
+
+input::placeholder {
+    color: var(--cor-desaturated-red);
+}
+
+#emalErrorMsg,
+#inputError {
+    display: none;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 10px 23px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+#emalErrorMsg {
+    color: var(--vermelho-suave);
+    font-size: 1em;
+    padding: 10px 15px 0px;
+}
+
+@media (min-width:48em) {
+    main {
+        flex-direction: row;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo {
+        width: 7em;
+        display: none;
+    }
+    #logoDesktop {
+        display: block;
+        position: absolute;
+        top: 7%;
+        left: 9%;
+    }
+    #foto {
+        content: url("./images/hero-desktop.jpg");
+        padding: 0px;
+    }
+    #coming {
+        font-size: 3em;
+        line-height: 1em;
+        letter-spacing: 15px;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        padding: 0px;
+    }
+    .conteudo {
+        width: 60%;
+    }
+    section h1,
+    section p {
+        text-align: left;
+        padding: 10px 0px;
+    }
+    button {
+        padding: 10px 30px;
+    }
+}
