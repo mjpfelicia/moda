@@ -24,6 +24,7 @@
 ## Tecnologias usandas:
 - Marcação HTML5 semântica
 - Flexbox
+- js
 - CSS 
 
 ## O que eu aprendi
