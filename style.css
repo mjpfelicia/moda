@@ -1,173 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
-body,
-p,
-h1 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 1em;
-    font-family: "Josefin Sans";
-}
-
- :root {
-    /*  Primária*/
-    --cor-desaturated-red: hsl(0, 36%, 70%);
-    --vermelho-suave: hsl(0, 93%, 68%);
-    /*Neutra*/
-    --cor-vermelho-acinzentado-escuro: hsl(0, 6%, 24%);
-    /*Gradient*/
-    --cor-linear-de: hsl(0, 0%, 100%);
-    --cor-para: hsl(0, 100%, 98%);
-    --cor-linear-de: hsl(0, 80%, 86%);
-    --cor-para: hsl(0, 74%, 74%);
-    --padding-content: 1.5em;
-}
-
-main {
-    background-color: hsl(0, 100%, 98%);
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    background-image: url(./images/bg-pattern-desktop.svg);
-    background-repeat: no-repeat;
-    max-width: 100vw;
-    min-height: 100vh;
-}
-
-#foto {
-    max-width: 100%;
-    max-height: 100vh;
-    padding-bottom: 50px;
-}
-
-#logo {
-    width: 7em;
-    padding: 30px;
-}
-
-#logoDesktop {
-    display: none;
-}
-
-#coming {
-    font-size: 2em;
-    font-weight: 300;
-    letter-spacing: 10px;
-    text-align: center;
-    color: var(--cor-desaturated-red);
-}
-
-section {
-    max-width: 100%;
-}
-
-.conteudo {
-    padding: 15px;
-}
-
-.texto {
-    padding: 20px 0px;
-    text-align: center;
-}
-
-strong {
-    font-weight: 600;
-    color: var(--cor-vermelho-acinzentado-escuro);
-}
-
-p {
-    color: var(--cor-desaturated-red);
-    font-weight: 400;
-    line-height: 1.4em;
-}
-
-form {
-    border: 1px solid var(--cor-desaturated-red);
-    display: flex;
-    justify-content: space-between;
-    border-radius: 30px;
-}
-
-input,
-input:hover {
-    border: none;
-    border-radius: 30px;
-    padding-left: var(--padding-content);
-    background-color: hsl(0, 100%, 98%);
-}
-
-input::placeholder {
-    color: var(--cor-desaturated-red);
-}
-
-#emalErrorMsg,
-#inputError {
-    display: none;
-}
-
-button {
-    border: none;
-    border-radius: 30px;
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    width: 70px;
-    height: 40px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-}
-
-#emalErrorMsg {
-    color: var(--vermelho-suave);
-    font-size: 1em;
-    padding: 10px 15px 0px;
-}
-
-@media (min-width:48em) {
-    main {
-        flex-direction: row;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+    body,
+    p,
+    h1 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 1em;
+        font-family: "Josefin Sans";
     }
+    
+     :root {
+        /*  Primária*/
+        --cor-desaturated-red: hsl(0, 36%, 70%);
+        --vermelho-suave: hsl(0, 93%, 68%);
+        /*Neutra*/
+        --cor-vermelho-acinzentado-escuro: hsl(0, 6%, 24%);
+        /*Gradient*/
+        --cor-linear-de: hsl(0, 0%, 100%);
+        --cor-para2: hsl(0, 100%, 98%);
+        --cor-lineparde: hsl(0, 80%, 86%);
+        --cor-para: hsl(0, 74%, 74%);
+        --padding-content: 1.5em;
+    }
+    
+    main {
+        background-color: var(--cor-para2);
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        max-width: 100vw;
+        min-height: 100vh;
+    }
+    
+    #foto {
+        max-width: 100%;
+        max-height: 100vh;
+        padding-bottom: 50px;
+    }
+    
     #logo {
         width: 7em;
+        padding: 30px;
+    }
+    
+    #logoDesktop {
         display: none;
     }
-    #logoDesktop {
-        display: block;
-        position: absolute;
-        top: 7%;
-        left: 13%;
-        width: 7em;
-    }
-    #foto {
-        content: url("./images/hero-desktop.jpg");
-        padding: 0px;
-    }
+    
     #coming {
-        font-size: 3em;
-        line-height: 1.1em;
-        letter-spacing: 13px;
-        text-align: left;
-        margin: 15px 25px 10px 0px;
-        padding: 0px;
+        font-size: 2em;
+        font-weight: 300;
+        letter-spacing: 10px;
+        text-align: center;
+        color: var(--cor-desaturated-red);
     }
+    
+    section {
+        max-width: 100%;
+    }
+    
     .conteudo {
-        margin: 0 auto;
-        width: 60%;
-        padding-top: 35px;
+        padding: 15px;
     }
+    
     .texto {
-        font-size: 0.8em;
-        text-align: left;
-        margin: 15px 25px 50px 0px;
-        padding: 0px;
-        line-height: 1.8em;
-        width: 75%;
+        padding: 20px 0px;
+        text-align: center;
     }
+    
+    strong {
+        font-weight: 600;
+        color: var(--cor-vermelho-acinzentado-escuro);
+    }
+    
+    p {
+        color: var(--cor-desaturated-red);
+        font-weight: 400;
+        line-height: 1.4em;
+    }
+    
     form {
-        margin: 10px 25px 10px 0px;
-        width: 75%;
+        border: 1px solid var(--cor-desaturated-red);
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30px;
     }
-}
+    
+    input::placeholder {
+        color: var(--cor-desaturated-red);
+    }
+    
+    input,
+    input:hover {
+        background-color: var(--cor-para2);
+        border: none;
+        border-radius: 30px;
+        padding-left: var(--padding-content);
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+    
+    #inputError {
+        width: 25px;
+        height: 25px;
+        padding-top: 5px;
+    }
+    
+    #emalErrorMsg,
+    #inputError {
+        display: none;
+    }
+    
+    button {
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(135deg, var(--cor-lineparde), var(--cor-para));
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background: var(--cor-lineparde)
+    }
+    
+    #emalErrorMsg {
+        color: var(--vermelho-suave);
+        font-size: 1em;
+        padding: 10px 15px 0px;
+    }
+    
+    @media (min-width:48em) {
+        main {
+            flex-direction: row;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            background-size: 56% 100%;
+        }
+        #logo {
+            width: 7em;
+            display: none;
+        }
+        #logoDesktop {
+            display: block;
+            position: absolute;
+            top: 7%;
+            left: 13%;
+            width: 8em;
+        }
+        #foto {
+            content: url("./images/hero-desktop.jpg");
+            padding: 0px;
+        }
+        #coming {
+            font-size: 4em;
+            line-height: 1em;
+            letter-spacing: 13px;
+            text-align: left;
+            margin: 15px 25px 10px 0px;
+            padding: 0px;
+        }
+        .conteudo {
+            margin: 0 auto;
+            width: 60%;
+            padding-top: 35px;
+        }
+        .texto {
+            text-align: left;
+            margin: 15px 25px 50px 0px;
+            padding: 0px;
+            line-height: 1.8em;
+            width: 95%;
+        }
+        form {
+            margin: 10px 25px 10px 0px;
+            width: 95%;
+        }
+    }

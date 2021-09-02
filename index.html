@@ -15,7 +15,6 @@
             <img id="foto" src="./images/hero-mobile.jpg" alt="mobile">
             <section>
                 <div class="conteudo">
-
                     <img id="logoDesktop" src="./images/logo.svg" alt="logo">
                     <h1 id="coming">
                         WE'RE
@@ -25,12 +24,11 @@
                     <p class="texto">
                         Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
                     </p>
-
                     <form id="formEmail" action="#form">
-                        <input class="input_email" type="email" name="email" id="email" placeholder="Email Address">
+                        <input class="input_email" type="text" nome="email" autocomplete="off" id="email" placeholder="Email Address">
+                        <img id="inputError" src="./images/icon-error.svg" alt="error">
 
-                        <button type="submit" class="email" onclick="validaForm()">
-                            <img id="inputError" src="./images/icon-error.svg" alt="error">
+                        <button type="button" class="email" onclick="validaForm()">
                             <img src="./images/icon-arrow.svg" alt="submit">
                         </button>
                     </form>
